@@ -9,7 +9,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaAPI {
-    private static final String API_KEY = "3a59738ee65ca0b1a2c314ed";
+    private static final String API_KEY = System.getenv("EXCHANGE_RATE_API_KEY");
     private static final String BASE_URL = "https://v6.exchangerate-api.com/v6/";
 
     public ExchangeResponse buscarCotacao(String moedaBase) {
